@@ -41,27 +41,36 @@ ul {
     list-style: none;
 }
 
-
-/* --------------------------header--------------------------------- */
 .section {    
-    width: 1200px;
-    align-items: center; 
-    padding: 94px 15px ; 
-    margin: 0 auto;   
+  padding-top: 94px;
+  padding-bottom: 94px;   
 }
 
-.header {
+.container {
     width: 1200px;
-    display: flex;
-    padding: 24px 15px 25px;
-    margin: 0 auto;
-    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/* --------------------------header--------------------------------- */
+
+.header {    
+    padding-top: 25px;
+    padding-bottom: 25px;    
+    margin: 0 auto;    
     border-bottom: 1px solid #ECECEC; 
 }
 
 .navigation {
-    display: flex; 
+    display: flex;    
     align-items: center;     
+}
+
+.header-box {
+    display: flex;
+    justify-content: space-between;
 }
 
 .site-nav {
@@ -263,7 +272,7 @@ ul {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-color);
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .item-our-work {    
@@ -352,7 +361,6 @@ ul {
     border-radius: 0px 0px 4px 4px;
 }
 
-
 /* -------------------end-section-our-team-------------------------- */
 /* -------------------------clients-------------------------- */
 
@@ -376,7 +384,7 @@ ul {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-color);
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .clients-list-icon {
@@ -516,6 +524,7 @@ ul {
     padding-left: 15px; 
     padding-right: 15px;
     margin: 0 auto;
+    margin-bottom: 56px;
 }
 
 .title-portfolio {
@@ -556,10 +565,6 @@ ul {
         rgba(0, 0, 0, 0.08), 
         0px 2px 2px 
         rgba(0, 0, 0, 0.12);
-}
-
-.hero-portfolio {
-    padding-bottom: 34px;
 }
 
 .title-hero-portfolio {
