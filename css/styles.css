@@ -228,7 +228,8 @@ ul {
 
 .adv-item {   
     width: 270px;
-    height: 100px;    
+    height: 100px;
+    padding-top: 30px;  
 }
 
 .avd-box {
@@ -240,7 +241,6 @@ ul {
 .avd-icon {
     width: 66px;
     height: 70px;
-    margin-bottom: 30px;      
 }
 
 .avd-icon-list {
