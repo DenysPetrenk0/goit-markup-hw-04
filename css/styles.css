@@ -54,6 +54,16 @@ ul {
     margin-right: auto;
   }
 
+  .general-title {      
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    margin-bottom: 50px;
+}
+
 /* --------------------------header--------------------------------- */
 
 .header {    
@@ -150,7 +160,8 @@ ul {
     margin-right: 10px;
 }
 
-.link:hover .contact-icon {
+.link:hover .contact-icon,
+.link:focus .contact-icon {
     fill: var(--link-color);
 }
 
@@ -172,7 +183,7 @@ ul {
 }
 
 .titel{
-    width: 560px;
+    width: 615px;
     margin:auto;
     margin-bottom: 30px;
     font-weight: 900;
@@ -181,6 +192,7 @@ ul {
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--white-color);
+    text-transform: uppercase;
 }
 
 .button {
@@ -211,8 +223,7 @@ ul {
 .adv {
     display: flex;   
     justify-content: space-between;
-    padding-bottom: 0;
-      
+    margin-left: -30px;     
 }
 
 .title-adv {
@@ -222,9 +233,7 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--title-color);
-    padding-bottom: 10px;
-    
+    color: var(--title-color);   
 }
 
 .indent-adv {
@@ -236,20 +245,13 @@ ul {
 }
 
 .adv-item {   
-    width: 270px;
-    height: 100px;
-    padding-top: 30px;  
-}
-
-.avd-box {
-    width: 270px;
-    height: 120px;
-    padding: 25px 100px;
+    flex-basis: calc((100% - 90px) / 4);
+    margin-left: 30px;    
 }
 
 .avd-icon {
-    width: 66px;
-    height: 70px;
+    width: 70px;
+    height: 66px;
 }
 
 .avd-icon-list {
@@ -260,24 +262,23 @@ ul {
 .avd-icon-box {
     padding: 25px 100px;
     background: var(--bg-color);
+    margin-bottom: 30px;
+
 }
 
 /* ---------------------end-section-avd------------------------------ */
 /* ------------------------section-our-work-------------------------- */
 
-.title-our-work {      
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--title-color);
-    margin-bottom: 50px;
+.our-work {    
+    display: flex;
+    margin-left: -30px;
+    margin-top: -30px;    
 }
 
-.item-our-work {    
-    display: flex;
-    justify-content: space-between;
+.item-our-work {
+    flex-basis: calc((100% - 60px) / 3);
+    margin-left: 30px;
+    margin-top: 30px;
 }
 
 /* --------------------end-section-our-work-------------------------- */
@@ -285,8 +286,8 @@ ul {
 
 .team {    
     display: flex; 
-    margin-right: -30px;
-    margin-bottom: -30px;   
+    margin-left: -30px;
+    margin-top: -30px;       
 }
 
 .our-team {
@@ -295,8 +296,8 @@ ul {
 
 .item-our-team {
     flex-basis: calc((100% - 90px) / 4);
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
     box-sizing: border-box;
 }
 
@@ -343,7 +344,7 @@ ul {
     align-items: center;
     width: 44px;
     height: 44px;
-    background: var(--bg-color);
+    background: var(--white-color);
     border-radius: 50%;
 }
 
@@ -359,6 +360,8 @@ ul {
 .our-team-box {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
+    background: var(--white-color);
 }
 
 /* -------------------end-section-our-team-------------------------- */
@@ -366,25 +369,15 @@ ul {
 
 .clients-list {
     display: flex;
-    margin-right: -30px;
     margin-left: -30px;
+    margin-top: -30px;
 }
 
 .clients-item {
     flex-basis: calc((100% - 150px) / 6);
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
     box-sizing: border-box;
-}
-
-.clients-title {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--title-color);
-    margin-bottom: 50px;
 }
 
 .clients-list-icon {
@@ -479,9 +472,9 @@ ul {
     align-items: center;
     width: 44px;
     height: 44px;
-    background: var(--bg-color);
-    border-radius: 50%;
+    background: #2F303A;    
     margin-right: 10px;
+    border-radius: 50%; 
 }
 
 .footer-social {
@@ -496,7 +489,7 @@ ul {
     align-items: center;
     width: 44px;
     height: 44px;
-    background: var(--text-color);
+    background: rgba(255, 255, 255, 0.1);;
     border-radius: 50%;    
 }
 
@@ -514,6 +507,7 @@ ul {
     width: 20px;
     height: 20px;
     fill: var(--white-color);
+    
 }
 /* ----------------------end-footer------------------------------- */
 /* ----------------------portfolio------------------------------- */
@@ -524,7 +518,7 @@ ul {
     padding-left: 15px; 
     padding-right: 15px;
     margin: 0 auto;
-    margin-bottom: 56px;
+    margin-bottom: 50px;
 }
 
 .title-portfolio {
@@ -597,6 +591,7 @@ ul {
     letter-spacing: 0.06em;
     color: var(--title-color);
     text-align: left;
+    margin-bottom: 4px;
 }
 
 .filter {
@@ -620,4 +615,8 @@ ul {
     rgba(0, 0, 0, 0.06), 
     1px 4px 6px 
     rgba(0, 0, 0, 0.16);
+}
+
+.title-box {
+    padding: 24px 20px;
 }
