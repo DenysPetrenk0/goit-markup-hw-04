@@ -292,6 +292,10 @@ ul {
 
 .our-team {
     background: var(--bg-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+    width: 1600px;
+    margin: 0 auto; 
 }
 
 .item-our-team {
